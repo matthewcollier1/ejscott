@@ -1,0 +1,40 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 3rem;
+	margin: 0;
+	letter-spacing: 1rem;
+	color: #3e0b3b;
+	border-bottom: 5px solid;
+}
+
+h2 {
+	font-weight: 200;
+	font-size: 2rem;
+	margin: 0;
+	color: #3e0b3b;
+}
+
+h4 {
+	font-weight: 200;
+	font-size: 1rem;
+	color: #3e0b3b;
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 200;
+	font-family: 'Raleway', sans-serif;
+	color: #3e0b3b;
+}
+
+.splash-page__sub-title h2 {
+	font-size: 3vw;
+	padding-right: 1rem;
+	-ms-flex-item-align: center;
+	    align-self: center;
+}

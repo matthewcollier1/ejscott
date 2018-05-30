@@ -1,0 +1,9 @@
+.gallery-page {
+	@include page-grid;
+	height: 100%;
+	background: #e4d7dc;
+}
+
+.gallery-page__header {
+	@include page-header;
+}

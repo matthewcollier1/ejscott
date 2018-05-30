@@ -1,0 +1,30 @@
+.bio-page {
+	@include page-grid;
+}
+
+.bio-page__header {
+	@include page-header;
+}
+
+.bio-page__circle {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	justify-self: center;
+	border-radius: 100%;
+}
+
+.bio-page__header-title {
+	text-align: center;
+}
+
+.bio-page {
+	&__acting-bio,
+	&__directing-bio,
+	&__teaching-bio {
+		margin-bottom: 2rem;
+		p {
+			margin-bottom: 2rem;
+		}
+	}
+}

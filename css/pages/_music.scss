@@ -1,0 +1,22 @@
+.cd-info-page {
+	@include page-grid;
+}
+
+.cd-info-page__header {
+	@include page-header;
+}
+
+.cd-info-page__cover {
+	height: 20vh;
+
+	img {
+		height: 100%;
+		width: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+}
+
+.cd-info__button {
+	@include flex-center;
+}
