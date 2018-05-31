@@ -21,4 +21,15 @@
 
 .blog-page__blogs {
 	width: 100%;
+	a {
+		color: #3e0b3b;
+		text-decoration: none;
+	}
+}
+
+.blog-page__content {
+	margin: 0 2rem;
+	p {
+		text-align: left;
+	}
 }

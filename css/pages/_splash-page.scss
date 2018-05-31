@@ -47,31 +47,24 @@
 	color: white;
 	grid-row: 2 / 3;
 	grid-column: 3;
-	@include flex-center;
-
-	q {
-		font-size: 4vw;
-	}
 }
 .splash-page__album-download {
-	grid-column: 3 / 5;
+	grid-column: 1 / 5;
 	grid-row: 4 / 5;
-	background-color: orange;
-	-webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+	background-color: #e3d7dce6;
+	height: 32%;
+	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 
 	button {
-		-webkit-transform: rotate(-19deg);
-		transform: rotate(-19deg);
-		margin-top: 7vw;
+		background-color: #e3d7dc;
+		border: none;
 	}
 }

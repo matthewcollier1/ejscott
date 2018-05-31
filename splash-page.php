@@ -25,13 +25,14 @@
             </div>
 
             <div class="splash-page__reviews">
-                <q>Fantastic</q>
+                <q>
+                    <?php echo do_shortcode( '[testimonial_rotator id="182"]', ignore_html ); ?>
+                </q>    
             </div>
 
             <div class="splash-page__album-download">
-                <button>Download Here
-                    <div class="button__horizontal"></div>
-                    <div class="button__vertical"></div>
+                <button>Download My Album For Free Here
+
                 </button>
             </div>
 

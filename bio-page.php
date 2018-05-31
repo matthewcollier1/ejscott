@@ -11,53 +11,31 @@
 
         <div class="bio-page">
 
-            <div class="bio-page__acting-bio">
-                <h2>1. Acting Bio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo iusto, earum voluptatibus odit maiores
-                    facere unde dolores exercitationem modi sapiente, illum sint quos quo nobis beatae repellendus labore!
-                    Maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores assumenda dolorum tenetur saepe
-                    quae totam consectetur natus. Blanditiis eligendi quidem corporis rem consectetur quas sint error itaque.
-                    Architecto, vero excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum in iste necessitatibus
-                    beatae, doloribus eaque hic error deleniti! Consequatur veniam amet ipsam ullam nam dignissimos ut repellendus
-                    ipsum sit repellat.
-                </p>
-                <button>Acting Resume
-                    <div class="button__horizontal"></div>
-                    <div class="button__vertical"></div>
-                </button>
-            </div>
+            
+        <?php 
+           
+            $homepageBio = new WP_Query(array(
+                'posts-per-page' => '-1',               
+                'post_type' => 'bio',
+                'meta_key' => 'bio',
+                'order' => 'ASC',
+            ));
 
-            <div class="bio-page__directing-bio">
-                <h2>2. Directing Bio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo iusto, earum voluptatibus odit maiores
-                    facere unde dolores exercitationem modi sapiente, illum sint quos quo nobis beatae repellendus labore!
-                    Maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga accusamus perspiciatis,
-                    iusto sed expedita laboriosam assumenda, libero asperiores accusantium, vero nihil fugit obcaecati quisquam
-                    amet. Delectus commodi voluptas consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos aliquam, accusantium magni optio obcaecati qui in minima quae. Eveniet distinctio iusto dicta,
-                    corporis quasi eligendi labore aliquid expedita inventore mollitia! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Accusamus vitae quam aliquid quis quaerat porro esse a voluptate voluptatum, consequuntur
-                    illum libero. Tempora eveniet suscipit animi, consequuntur laudantium exercitationem necessitatibus.
-                </p>
-                <button>Directing Resume
-                    <div class="button__horizontal"></div>
-                    <div class="button__vertical"></div>
-                </button>
-            </div>
+            while($homepageBio->have_posts()){
+                $homepageBio->the_post(); ?>
+                <div class="bio-page__bios">
+                    <h2>
+                        <?php echo the_title(); ?>
+                    </h2>
+                    <p>
+                        <?php echo the_content( more_link_text, strip_teaser ); ?>
+                    </p>
+                </div>
+            <?php }
+            ?>
+            
+</div>
 
-            <div class="bio-page__teaching-bio">
-                <h2>3. Teaching Bio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo iusto, earum voluptatibus odit maiores
-                    facere unde dolores exercitationem modi sapiente, illum sint quos quo nobis beatae repellendus labore!
-                    Maxime!
-                </p>
-                <button>
-                    Teaching Resume
-                    <div class="button__horizontal"></div>
-                    <div class="button__vertical"></div>
-                </button>
-            </div>
-
-        </div>
+        
 
         <!-- End Bio Page -->

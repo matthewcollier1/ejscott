@@ -17,7 +17,7 @@ endif;
 ?> 
 </div>
 </div>
-Gallery Only
+
 
         <div class="events-page__button">
         <a href="<?php echo site_url( '/')?>">

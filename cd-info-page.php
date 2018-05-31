@@ -7,13 +7,23 @@
         <div class="cd-info-page">
 
             <div class="cd-info-page__cover">
-                <img src="<?php the_post_thumbnail( 'full', attr ); ?>" />
+                <img src="<?php echo get_theme_file_uri("/img/cd.jpg") ?>" />
             </div>
 
             <div class="cd-info-page__info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque voluptatem. Minus esse, voluptatem
-                    maiores commodi iste tempora quo deleniti vel dolor! Rerum similique a doloribus, molestias aliquid amet
-                    perspiciatis!
+                <p>
+                <?php    
+                $cdInfo = new WP_Query(array(
+                        'post_type' => 'cd-info',
+                        'meta-key' => 'cd_info'
+                    ));
+
+                    while($cdInfo->have_posts()){
+                        $cdInfo->the_post();
+                        echo the_content( more_link_text, strip_teaser );
+                    }
+
+                    ?>
                 </p>
             </div>
 
@@ -21,8 +31,7 @@
 
         <div class="cd-info__button">
             <button>CD Download
-                <div class="button__horizontal"></div>
-                <div class="button__vertical"></div>
+
             </button>
         </div>
         <!-- End Cd Info Page -->

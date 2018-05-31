@@ -7,7 +7,7 @@
 }
 
 .cd-info-page__cover {
-	height: 20vh;
+	height: 100%;
 
 	img {
 		height: 100%;
@@ -15,6 +15,10 @@
 		-o-object-fit: cover;
 		object-fit: cover;
 	}
+}
+
+.cd-info-page__info {
+	@include flex-center;
 }
 
 .cd-info__button {

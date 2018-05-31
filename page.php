@@ -11,6 +11,6 @@ else:
 endif;
 ?> 
     
-
+Single Post
 
 <?php get_footer(); ?>

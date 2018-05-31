@@ -23,5 +23,5 @@ endif;
             </button>
         </a>
         </div>
-Front Page Gallery
+
 
