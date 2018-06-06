@@ -25,10 +25,11 @@
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	margin-bottom: 2rem;
 }
 
 .event-summary {
-	height: 100%;
+	height: auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -45,6 +46,10 @@
 	background: #e4c9c9;
 	-webkit-box-shadow: -1px 7px 6px 3px #00000030;
 	box-shadow: -1px 7px 6px 3px #00000030;
+
+	a {
+		border: 1px solid;
+	}
 }
 
 .event-summary img {

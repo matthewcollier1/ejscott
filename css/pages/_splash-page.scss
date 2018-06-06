@@ -2,7 +2,7 @@
 	background-color: wheat;
 	display: grid;
 	grid-template-columns: 16% repeat(3, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+	/* grid-template-rows: repeat(4, 1fr); */
 }
 .splash-page__image {
 	grid-row: 1 / 5;
@@ -19,6 +19,7 @@
 	grid-row: 1 / 5;
 	grid-column: 1 / 2;
 	position: fixed;
+	z-index: 1;
 }
 .splash-page__title {
 	grid-column: 2 / 4;
@@ -42,12 +43,16 @@
 	-webkit-box-align: end;
 	-ms-flex-align: end;
 	align-items: flex-end;
+	padding-top: 7vw;
 }
+
 .splash-page__reviews {
-	color: white;
 	grid-row: 2 / 3;
 	grid-column: 3;
+	@include flex-center;
+	padding-top: 8vw;
 }
+
 .splash-page__album-download {
 	grid-column: 1 / 5;
 	grid-row: 4 / 5;
@@ -68,3 +73,16 @@
 		border: none;
 	}
 }
+
+//testimonial
+
+.testimonial_rotator_wrap.with-prevnext {
+	margin: 0;
+	padding: 0;
+}
+
+/* .slide[style] {
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+} */

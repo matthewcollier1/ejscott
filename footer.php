@@ -7,7 +7,7 @@
         <div class="footer-container__left">
 
             <div class="footer-container__contact">
-                
+                <span>email@emailaddress.com</span>
             </div>
 
         </div>
@@ -15,6 +15,12 @@
         <div class="footer-container__right">
 
             <div class="footer-container__social-media">
+
+                <p>LinkedIn</p>
+
+                <p>Instagram</p>
+
+                <p>Other</p>
 
             </div>
 

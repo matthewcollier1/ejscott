@@ -4,10 +4,12 @@
 		margin: 0;
 		padding: 0;
 		background-color: rebeccapurple;
+		-webkit-transition: all 1s ease-in;
+		transition: all 1s ease-in;
 		li {
 			font-size: 4vw; // down to 2 on scroll
 			font-weight: 100;
-			color: orange;
+			color: #e3d7dc;
 			-webkit-transition: all 0.4s ease;
 			transition: all 0.4s ease;
 		}
@@ -18,9 +20,19 @@
 	ul {
 		-webkit-box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.4);
 		box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.4);
-		opacity: 0.5;
+		opacity: 1;
+		width: 100vw;
+		height: 4rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
 		li {
-			font-size: 2vw;
+			font-size: 120%;
 		}
 	}
 }

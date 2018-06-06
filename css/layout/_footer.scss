@@ -1,6 +1,5 @@
 footer {
-	height: 50vh;
-	background: orange;
+	height: 15vh;
 }
 
 .footer-container {
@@ -13,11 +12,14 @@ footer {
 .footer-container__left {
 	width: 50%;
 	height: 100%;
-	background: red;
+	background: #eae6e3;
+	@include flex-center;
+	border-right: 1px solid;
 }
 
 .footer-container__right {
 	width: 50%;
 	height: 100%;
-	background: blue;
+	background: #eae6e3;
+	@include flex-center;
 }

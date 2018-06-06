@@ -4,14 +4,24 @@
 
 .bio-page__header {
 	@include page-header;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .bio-page__circle {
-	height: 100px;
-	width: 100px;
-	background-color: red;
+	height: 25%;
+	width: 25%;
 	justify-self: center;
 	border-radius: 100%;
+	img {
+		height: 100%;
+		width: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		border-radius: 100%;
+	}
 }
 
 .bio-page__header-title {
@@ -31,13 +41,25 @@
 
 .bio-page__bios {
 	margin: 0 2rem;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
 	p {
 		text-align: left;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		padding: 0 1rem;
 	}
+}
+
+.bio-page__bios:hover {
+	background: #e4c9c933;
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+	border-radius: 3%;
+	-webkit-box-shadow: 6px 9px 10px #ab6f6f33;
+	box-shadow: 6px 9px 10px #ab6f6f33;
 }

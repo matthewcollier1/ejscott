@@ -7,6 +7,12 @@ button {
 	text-transform: uppercase;
 	cursor: pointer;
 	color: #3e0b3b;
+	-webkit-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+
+button:hover {
+	background: #e4c9c9;
 }
 
 /* .button__horizontal {

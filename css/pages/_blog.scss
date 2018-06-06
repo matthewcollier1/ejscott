@@ -21,10 +21,21 @@
 
 .blog-page__blogs {
 	width: 100%;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
 	a {
 		color: #3e0b3b;
 		text-decoration: none;
 	}
+}
+
+.blog-page__blogs:hover {
+	background: #e4c9c933;
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+	border-radius: 3%;
+	-webkit-box-shadow: 6px 9px 10px #ab6f6f33;
+	box-shadow: 6px 9px 10px #ab6f6f33;
 }
 
 .blog-page__content {
