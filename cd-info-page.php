@@ -1,5 +1,5 @@
  <!-- Start Cd Info Page -->
- <div class="cd-info-page__header">
+ <div class="cd-info-page__header" id="music">
             <h1>CD Info</h1>
         </div>
 

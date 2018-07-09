@@ -1,5 +1,5 @@
         <!-- Start Blog Page -->
-        <div class="blog-page__header">
+        <div class="blog-page__header" id="blog">
             <h1>Blog</h1>
         </div>
 

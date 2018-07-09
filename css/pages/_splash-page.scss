@@ -24,6 +24,7 @@
 .splash-page__title {
 	grid-column: 2 / 4;
 	grid-row: 1 / 2;
+	margin-left: 2rem;
 	img {
 		width: 100%;
 		-o-object-fit: contain;
@@ -44,6 +45,7 @@
 	-ms-flex-align: end;
 	align-items: flex-end;
 	padding-top: 7vw;
+	margin-left: 2rem;
 }
 
 .splash-page__reviews {
@@ -79,6 +81,27 @@
 .testimonial_rotator_wrap.with-prevnext {
 	margin: 0;
 	padding: 0;
+	width: 234%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#testimonial_rotator_182 {
+	position: static !important;
+	text-align: center;
+}
+
+.testimonial_rotator_nav {
+	width: 20rem;
+}
+
+.testimonial_rotator_prev,
+.testimonial_rotator_next {
+	font-size: 4rem;
 }
 
 /* .slide[style] {
@@ -86,3 +109,24 @@
 	display: -ms-flexbox !important;
 	display: flex !important;
 } */
+
+q {
+	width: 200%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	::before,
+	::after {
+		content: none;
+	}
+}
+
+h2.testimonial_rotator_slide_title {
+	font-size: 2vw;
+}
+
+.testimonial_rotator.template-default .testimonial_rotator_author_info {
+	line-height: 0;
+	padding: 0 0 0 5px;
+	margin: 14%;
+}

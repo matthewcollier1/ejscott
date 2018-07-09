@@ -1,4 +1,4 @@
-<div class="gallery-page__header">
+<div class="gallery-page__header" id="gallery">
             <h1>Gallery</h1>
         </div>
 

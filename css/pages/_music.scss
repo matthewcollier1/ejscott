@@ -4,6 +4,9 @@
 
 .cd-info-page__header {
 	@include page-header;
+	h1 {
+		margin-bottom: 2rem;
+	}
 }
 
 .cd-info-page__cover {
@@ -23,6 +26,7 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	padding: 0 2rem;
 }
 
 .cd-info__button {

@@ -1,5 +1,5 @@
  <!-- Start Events Page -->
- <div class="events-page__header">
+ <div class="events-page__header" id="events">
             <h1>Events</h1>
         </div>
         <div class="events-page">

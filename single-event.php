@@ -19,16 +19,6 @@
                 'meta_key' => 'event_date',
                 'orderby' => 'meta_value_num',
                 'order' => 'DESC',
-                //Only show upcoming events
-                /* 'meta_query' => array( 
-                    array(
-                        'key' => 'event_date',
-                        'compare' => '>=',
-                        'value' => $today,
-                        'type' => 'numeric'
-                    )
-                ) */
-
             ));
 
             while($homepageEvents->have_posts()){

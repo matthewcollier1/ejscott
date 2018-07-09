@@ -1,5 +1,5 @@
         <!-- Start Bio Page -->
-        <div class="bio-page__header">
+        <div class="bio-page__header" id="bio">
             <div class="bio-page__circle">
                 <img src= <?php echo get_theme_file_uri('/img/headshot.jpg') ?> alt="" srcset="">   
             </div>

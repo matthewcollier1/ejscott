@@ -6,11 +6,11 @@
 
             <nav class="splash-page__navigation">
                 <ul>
-                    <li>Bio</li>
-                    <li>Blog</li>
-                    <li>Events</li>
-                    <li>Music</li>
-                    <li>Gallery</li>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                 </ul>
             </nav>
 
