@@ -22,6 +22,14 @@
 		-o-object-fit: cover;
 		object-fit: cover;
 		border-radius: 100%;
+		-webkit-transition: all 1s ease-in;
+		transition: all 1s ease-in;
+		&:hover {
+			-webkit-box-shadow: 0.4vw 0.4vw #68a1c6;
+			box-shadow: 0.4vw 0.4vw #68a1c6;
+			-webkit-transform: translateY(-4px);
+			transform: translateY(-4px);
+		}
 	}
 }
 
@@ -45,6 +53,9 @@
 	margin-bottom: 2rem;
 	-webkit-transition: all 0.5s ease-in;
 	transition: all 0.5s ease-in;
+	h2 {
+		padding-top: 2rem;
+	}
 	p {
 		text-align: left;
 		display: -webkit-box;

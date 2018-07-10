@@ -14,10 +14,11 @@
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	padding-bottom: 2rem;
 }
 
 .blog-archive {
-	height: 100vh;
+	height: 100%;
 }
 
 .blog-page__blogs {
@@ -42,6 +43,9 @@
 
 .blog-page__content {
 	margin: 0 2rem;
+	h2 {
+		padding-top: 2rem;
+	}
 	p {
 		text-align: left;
 	}

@@ -23,7 +23,6 @@ navigationShrink(); */
 //fix nav to top
 
 const nav = document.querySelector('.splash-page__navigation');
-const topOfNav = nav.offsetTop;
 const bio = document.querySelector('.bio-page__header');
 const biotest = bio.getBoundingClientRect();
 
