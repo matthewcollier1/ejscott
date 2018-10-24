@@ -9,6 +9,7 @@
 .events-page__events {
 	@include flex-center;
 	@include page-grid;
+	margin: 0;
 	grid-gap: 2rem;
 }
 

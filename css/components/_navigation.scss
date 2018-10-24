@@ -11,31 +11,29 @@
 			color: #e3d7dc;
 			-webkit-transition: all 0.4s ease;
 			transition: all 0.4s ease;
-			padding: 3%;
+			padding-bottom: 3%;
 		}
 	}
 }
 
-.splash-page__navigation--main {
+nav.splash-page__navigation--main {
 	ul {
 		background-color: #b68a9b;
 		-webkit-box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.4);
 		box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.4);
 		opacity: 1;
 		width: 100vw;
-		height: 4rem;
+		height: 100%;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
-		justify-content: space-around;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
+		justify-content: space-evenly;
+		font-size: 3vw;
 		li {
-			font-size: 120%;
-			padding: 0 5% 0 0;
+			font-size: 3vw;
+			padding: 0 1% 0 0;
 			:active {
 				color: pink;
 			}
@@ -70,4 +68,16 @@ li.logo {
 	visibility: visible;
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
+}
+
+@media screen and (max-width: 800px) {
+	nav.splash-page__navigation--main ul {
+		height: 5rem;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	nav.splash-page__navigation--main ul li {
+		font-size: 5vw;
+	}
 }

@@ -37,8 +37,10 @@ p {
 
 .splash-page__sub-title h2 {
 	font-size: 3vw;
-	padding-right: 1rem;
 	-ms-flex-item-align: center;
 	align-self: center;
-	font-weight: 300;
+	font-weight: 400;
+	color: white;
+	z-index: 2;
+	background: rebeccapurple;
 }

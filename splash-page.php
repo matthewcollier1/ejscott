@@ -1,7 +1,7 @@
 <div class="splash-page">
 
 <div class="splash-page__image">
-<img src= <?php echo get_theme_file_uri("/img/backgroundimage.png") ?> alt="">
+<img src= <?php echo get_theme_file_uri("/img/windowflowers.jpg") ?> alt="">
             </div>
 
             <nav class="splash-page__navigation">
@@ -14,19 +14,19 @@
                 </ul>
             </nav>
 
-            <div class="splash-page__title">
-                <img src= <?php echo get_theme_file_uri('/img/name.png') ?> alt="" srcset="">
+            <!-- <div class="splash-page__title">
+                <img src= <?php /* echo get_theme_file_uri('/img/name.png') */ ?> alt="" srcset="">
             </div>
 
             <div class="splash-page__sub-title">
-                <h2>Actor</h2>
+                <h2>Actor </h2>
                 <h2>Director</h2>
                 <h2>Teacher</h2>
             </div>
 
             <div class="splash-page__reviews">
                 <q>
-                    <?php echo do_shortcode( '[testimonial_rotator id="182"]', ignore_html ); ?>
+                    <?php /* echo do_shortcode( '[testimonial_rotator id="182"]', ignore_html ) */; ?>
                 </q>    
             </div>
 
@@ -35,5 +35,13 @@
 
                 </button>
             </div>
+ -->
+        <div class="name">
+            <h1>Eliza-Jane Scott</h1>
+            <h2>Actor. Director. Teacher.</h2>
+        </div>
 
+        <div class="reviews">
+        <?php echo do_shortcode('[testimonial_rotator id=198]', $ignore_html); ?>
+        </div>
 </div>
