@@ -74,10 +74,122 @@ li.logo {
 	nav.splash-page__navigation--main ul {
 		height: 5rem;
 		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
 	}
 	nav.splash-page__navigation--main ul li {
 		font-size: 5vw;
 	}
+}
+
+.nav-toggle {
+	position: relative;
+	padding: 10px;
+	background: transparent;
+	border: 1px solid transparent;
+	margin: 7px 0;
+	top: 0;
+	left: 0;
+}
+
+.nav-toggle:focus {
+	outline-width: 0;
+}
+
+.nav-toggle [class*="bar-"] {
+	background: #e8ad1a;
+	display: block;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 0.2s ease all;
+	transition: 0.2s ease all;
+
+	/* 
+	 * ENLARGED FOR PRESENTATION
+	 * Keep these values at the same proportion 
+	 * for it to look correct
+	*/
+	border-radius: 8px;
+	height: 8px;
+	width: 100px;
+	margin-bottom: 16px;
+
+	/*
+	 * Practical values:
+	 * border-radius: 2px;
+	 * height: 2px;
+	 * width: 25px;
+	 * margin-bottom: 4px;
+	*/
+}
+
+.nav-toggle .bar-bot {
+	margin-bottom: 0;
+}
+
+.opened .bar-top {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 15% 15%;
+	transform-origin: 15% 15%;
+}
+.opened .bar-mid {
+	opacity: 0;
+}
+.opened .bar-bot {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 15% 95%;
+	transform-origin: 15% 95%;
+}
+
+ul.splash-page__mobile-nav-links {
+	display: none;
+	-webkit-transition: all 3s ease-in;
+	transition: all 3s ease-in;
+	height: 100%;
+	width: 100%;
+}
+
+ul.opened {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 5vw;
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.splash-page__mobile-nav {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: transparent;
+	color: transparent;
+	-webkit-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
+}
+
+.splash-page__mobile-nav-open {
+	background: #e3d7df;
+	color: #515186;
+	z-index: 100000;
+	opacity: 1;
+}
+
+button.nav-toggle:hover {
+	background: transparent;
 }

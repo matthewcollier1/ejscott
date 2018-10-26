@@ -4,7 +4,22 @@
 <img src= <?php echo get_theme_file_uri("/img/windowflowers.jpg") ?> alt="">
             </div>
 
-            <nav class="splash-page__navigation">
+            <nav class="splash-page__mobile-nav">
+                <button class="nav-toggle">
+                    <span class="bar-top"></span>
+                    <span class="bar-mid"></span>
+                    <span class="bar-bot"></span>
+                </button>
+                <ul class="splash-page__mobile-nav-links">
+                    <li class="menu__items"><a href="#blog">Blog</a></li>
+                    <li class="menu__items"><a href="#bio">Bio</a></li>
+                    <li class="menu__items"><a href="#events">Events</a></li>
+                    <li class="menu__items"><a href="#music">Music</a></li>
+                    <li class="menu__items"><a href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+
+<!--              <nav class="splash-page__navigation">
                 <ul>
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#blog">Blog</a></li>
@@ -12,7 +27,7 @@
                     <li><a href="#music">Music</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                 </ul>
-            </nav>
+            </nav>  -->
 
             <!-- <div class="splash-page__title">
                 <img src= <?php /* echo get_theme_file_uri('/img/name.png') */ ?> alt="" srcset="">
